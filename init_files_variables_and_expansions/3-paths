@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -v '^$'
+echo "$PATH" | tr ':' '\n' | grep -v '^$' | wc -l
